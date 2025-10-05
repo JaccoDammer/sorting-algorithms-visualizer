@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Algorithms Visualizer</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta name="description" content="Interactive sorting algorithm visualizer built with HTML, CSS, and JavaScript. Watch Bubble Sort, Quick Sort, Merge Sort, and more come to life through real-time animations.">
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Sorting Algorithms Visualizer" />
+    <meta property="og:description" content="Interactive sorting algorithm visualizer built with HTML, CSS, and JavaScript. Watch Bubble Sort, Quick Sort, Merge Sort, and more come to life through real-time animations."/>
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <p id="version" class="muted"></p>
+    <div class="title">
+        <h1>Sorting Algorithms Visualizer</h1>
+    </div>
+    
+    <div class="chart-wrap">
+      <div id="chart" class="chart"></div>
+      <div class="x-axis" aria-hidden="true">
+        <span>1</span>
+        <span>100</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="reset-btn">Reset</button>
+        <div id="algorithm-buttons"></div>
+    </div>
+
+    <div id="info-panel" class="info-panel">
+        <h2 class="primary">Explanation</h2>
+        <p id="algorithm-description">Click on an algorithm to show the explanation.</p>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
